@@ -41,4 +41,37 @@
             border-radius: 5px;
             font-size: 14px;
         }
-        input[typ]()
+        input[type="submit"] {
+            background-color: #0D47A1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment #3</h1>
+        <form action="result.php" method="get">
+            <label for="x">Value of x:</label>
+            <input type="number" name="x" id="x" step="any" required>
+
+            <label for="y">Value of y:</label>
+            <input type="number" name="y" id="y" step="any" required>
+
+            <label for="z">Value of z:</label>
+            <input type="number" name="z" id="z" step="any" required>
+
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</body>
+</html>
